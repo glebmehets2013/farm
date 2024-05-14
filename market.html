@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="eggplant" title="eggplant - 3 coins"></div>
+    <div class="pepper" title="pepper - 2 coins"></div>
+    <div class="mushrooms" title="mushrooms - 15 coins"></div>
+    <div class="basket" title="basket - 10 coins"  ></div>
+
+<a href="/" id="back">
+    <span id="arrow">←</span>
+    <span id="text">to back</span>
+  
+
+</a>
+
+<img src="/img/famer2.png" alt="" id="famer2">
+
+
+
+
+
+
+
+
+<img src="https://pomorhappiness.ru/uploads/s/z/n/f/znfalarrlqkm/img/autocrop/e71ff8207e80ee1c44082150c0c73489.gif" alt="" class="farmer">
+
+<img src="img/meat.png" alt="" class="meat">
+
+<img src="img/market.png" alt="" class="market">
+
+<img src="img/market2.png" alt="" class="market2">
+
+<style>
+    .eggplant {
+        width: 44px;
+    height: 21px;
+    position: absolute;
+    top: 482px;
+    left: 490px;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: .2s;
+    z-index: 2;
+    }
+    .eggplant:hover {
+    background: rgba(0, 0, 0, 0.5);
+    }
+
+    .mushrooms {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 462px;
+    left: 180px;
+    /* background: linear-gradient(rgba(255, 255, 0, 0.322), rgba(0, 255, 0, 0.262), rgba(255, 166, 0, 0.322), rgba(255, 0, 0, 0.3)); */
+    cursor: pointer;
+    transition: .2s;
+    z-index: 2;
+    border-radius: 100px;
+    }
+    .mushrooms:hover {
+        background: linear-gradient(rgba(255, 255, 0, 0.522), rgba(0, 255, 0, 0.462), rgba(255, 166, 0, 0.422), rgba(255, 0, 0, 0.6));
+        animation: 1s mushrooms infinite;
+    }
+
+    @keyframes mushrooms {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            
+            transform: rotate(360deg);
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .basket {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 472px;
+    left: 85px;
+    /* background: linear-gradient(rgba(255, 255, 0, 0.322), rgba(0, 255, 0, 0.262), rgba(255, 166, 0, 0.322), rgba(255, 0, 0, 0.3)); */
+    cursor: pointer;
+    transition: .2s;
+    z-index: 2;
+    border-radius: 7px;
+    }
+    .basket:hover {
+        background: linear-gradient(rgba(200, 0, 255, 0.522), rgba(0, 255, 0, 0.462), rgba(255, 166, 0, 0.422), rgba(255, 0, 0, 0.6));
+        animation: 1s basket infinite;
+    }
+
+    @keyframes basket {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            
+            transform: rotate(360deg);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .farmer {
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    z-index: 4;
+    width: 100px;
+}
+    #back {
+        border-radius: 100px;
+        background: rgba(0, 140, 255, 0.4);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+    }
+
+    #back:hover{
+        background: rgba(0, 140, 255, 0.7);
+        
+    }
+
+
+    #arrow {
+        display: inline-block;
+
+    }
+    #arrow {
+        display: inline-block;
+        width: 40px;
+        padding: 20px;
+}
+    #text {
+        padding: 20px;
+
+
+    }
+    body {
+        height: 100vh;
+        background: url('img/bg.jpg');
+        background-size: cover;
+        /* background: #f7f7f7; */
+        height: 100vh;
+    }
+    .meat {
+        position: absolute;
+    width: 270px;
+    top: 350px; 
+    left: 900px;
+    filter: drop-shadow(10px 10px rgb(51, 48, 48))
+    }
+.market{
+    position: absolute;
+    width: 270px;
+    top: 400px;
+}
+
+.market2{
+    position: absolute;
+    width: 320px;
+    left: 400px;
+    top: 370px;
+}
+
+#famer2{
+    position: absolute;
+    left: 650px;
+    width: 160px;
+    top: 430px;
+}
+
+.pepper {
+        width: 44px;
+    height: 25px;
+    position: absolute;
+    top: 507px;
+    left: 480px;
+    background: rgba(255, 25, 25, 0);
+    cursor: pointer;
+    transition: .2s;
+    z-index: 2;
+    }
+    .pepper:hover {
+    background: rgba(255, 25, 25, 0.5);
+    }
+
+
+
+
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- <script src="script.js"></script> -->
+<script src="market.js"></script>
+
+</body>
+</html>
